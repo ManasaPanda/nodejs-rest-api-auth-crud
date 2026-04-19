@@ -13,36 +13,33 @@ A backend authentication system built using **Node.js, Express, Sequelize, and M
 
 ## 🚀 Features
 
-### ✅ Authentication
+### 🔐 Authentication
 
-* Register new users
-* Login with email & password
+* User Registration & Login
 * Password hashing using bcrypt
+* JWT-based authentication
 
-### 🔐 JWT Security
+### 🔁 Token System
 
 * Access Token (short expiry)
 * Refresh Token (long expiry)
-* Token verification middleware
-
-### 🔁 Refresh Token Flow
-
-* Generate new access token using refresh token
-* Prevents frequent login
+* Refresh endpoint to generate new access tokens
 
 ### 👮 Authorization
 
-* Role-based access (user/admin)
+* Role-based access control (RBAC)
 * Protected routes using middleware
 
-###📦 Product Module
+### 📦 Product Module
+
 * Create Product
 * Get All Products
 * Get Single Product
 * Update Product
 * Delete Product
-  
-###🔍 Search & Filtering
+
+### 🔍 Search & Filtering
+
 * Search products by name
 * Filter using query parameters
 ---
