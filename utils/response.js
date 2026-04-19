@@ -5,7 +5,8 @@ const STATUS = {
   UNAUTHORIZED: 401,
   NOT_FOUND: 404,
   SERVER_ERROR: 500,
-  CONFLICT: 409
+  CONFLICT: 409,
+  FORBIDDEN: 403
 };
 
 const MESSAGE = {
@@ -20,7 +21,14 @@ const MESSAGE = {
   NO_ID : "Id not found",
   USER_FETCH_SUCCESSFULLY : "User fetch successfully",
   NO_REFRESH_TOKEN : "Refresh token required",
-  TOKEN_REFRESHED : "Token refreshed"
+  TOKEN_REFRESHED : "Token refreshed",
+  PRODUCT_EXISTS: "Product already exists",
+  PRODUCT_CREATED: "Product created successfully",
+  PRODUCT_FETCH_SUCCESSFULLY : "Product fetch successfully",
+  PRODUCT_NOT_FOUND : "No product found",
+  NOT_AUTHORIZED: "Don't have access",
+  PRODUCT_UPDATED: "Product updated successfully",
+  PRODUCT_DELETED: "Product deleted successfully"
 };
 
 const sendresponse = (res, status, message, data = null) =>{

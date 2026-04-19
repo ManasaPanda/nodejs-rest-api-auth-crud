@@ -1,5 +1,5 @@
 const express = require('express');
-const routes = require('./routes/auth.routes');
+const routes = require('./routes');
 const errorhandler = require('./middleware/error.middleware');
 
 const app = express();
