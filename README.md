@@ -7,6 +7,7 @@ A backend authentication system built using **Node.js, Express, Sequelize, and M
 * Access Token & Refresh Token Flow
 * Protected Routes (Auth Middleware)
 * Role-Based Authorization (RBAC)
+* CRUD operations with search functionality
 
 ---
 
@@ -34,6 +35,16 @@ A backend authentication system built using **Node.js, Express, Sequelize, and M
 * Role-based access (user/admin)
 * Protected routes using middleware
 
+###📦 Product Module
+* Create Product
+* Get All Products
+* Get Single Product
+* Update Product
+* Delete Product
+  
+###🔍 Search & Filtering
+* Search products by name
+* Filter using query parameters
 ---
 
 ## 🛠 Tech Stack
@@ -48,29 +59,36 @@ A backend authentication system built using **Node.js, Express, Sequelize, and M
 ---
 ## 🔐 API Endpoints
 
-### 📝 Register
+### 📝 Auth Routes
 
 ```
 POST /api/auth/register
-```
-
-### 🔑 Login
-
-```
 POST /api/auth/login
-```
-
-### 🔄 Refresh Token
-
-```
 POST /api/auth/refresh
+POST /api/auth/logout
 ```
 
-### 🔒 Protected Route
+---
+
+### 📦 Product Routes (Protected)
 
 ```
-GET /api/user/profile
+POST   /api/products        → Create product
+GET    /api/products        → Get all products
+GET    /api/products/:id    → Get single product
+PUT    /api/products/:id    → Update product
+DELETE /api/products/:id    → Delete product
 ```
+
+---
+
+## 🔍 Search Example
+
+```
+GET /api/products?name=phone
+```
+
+👉 Filters products by name using query params
 
 ---
 
